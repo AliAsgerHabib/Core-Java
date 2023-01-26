@@ -19,10 +19,10 @@
 
 4. An integer literal (ie. a literal of type byte, short, char, int) shows an error if it is outside their range.
    Interestingly,
-    int a = 2147483647+1;   --> Throws an overflow.
-    int a = 2147483648      --> Gives an error.
+    int a = 2147483647 + 1;   --> Throws an overflow.
+    int a = 2147483648        --> Gives an error.
     Reason - This is because the compiler does not attempt to evaluate the expression, and the code will compile. Thus, causing overflow. 
-    But, for '2147483648', compiler throws an error as it is unable to recognize the literal.
+    But, for '2147483648', compiler throws an error as it can evaluate it to be out of range.
 
 5. long literal should always be defined with lower case or upper case 'l' at the end of the literal or else they are treated as int.
     Eg. 2147483648L
