@@ -1,22 +1,20 @@
 package com.habib.section3;
 
+@SuppressWarnings("unused")
 public class Chapter3 {
+	
 	
 	public static void part1() 
 	{
 		byte a = 20 , b = 30;
 //		byte c = a + b;   // Throws an error : Arithmetic Operation
 //		byte c = a & b;	  // Throws an error : Bitwise Operation
-		
-		short d = 25; 	  // Does not work for relational operations 
+		short f = a++;	  // Works : increment / decrement operations.
+		b += a;			  // Works : compound assignment operation.
+		byte c = 20 + 30; // Works : contains literals
+		short d = 25; 	  // Works :  relational operations 
 		if(d < 100) System.out.println("Hello");
 		short e = d;
-
-		short f = d++;	  // Does not work for increment / decrement operations.
-		d += a;			  // Does not work for compound assignment operation.
-		
-		byte c = 20 + 30; // Works as it contains literals
-
 	}
 	
 	public static void main(String[] args) 

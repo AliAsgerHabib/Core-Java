@@ -25,18 +25,21 @@
     But, for '2147483648', compiler throws an error as it can evaluate it to be out of range.
 
 5. long literal should always be defined with lower case or upper case 'l' at the end of the literal or else they are treated as int.
-    Eg. 2147483648L
+   Eg. 2147483648L
 
 6. float literal should always be defined with lower case or upper case 'f' at the end of the literal or else they are treated as double.
-    Eg. 21.47   --> double
-        21.47f  --> float
+   Eg. 21.47   --> double
+       21.47f  --> float
 
 7. It is highly recommended that we use 'double' for floating point numbers as it is faster to process and double is the default type for predefined methods and libraries.
 
-8. 'char' is also a subtype of int.
+8. In cases where precise calculations is necessary, neither float nor double should be used.
+Rather, we should use a predefined class called 'BigDecimal'.
+ 
+9. 'char' is also a subtype of int.
     >> A literal of type char can be asssigned to a variable of byte, short, int if it is in their range.
     >> A literal of integer type can be assigned to a variable of char if it is in its range.
-    >> But, to assign a variable of integer type to a character variable, type casting rules apply.
+    >> But, to assign a variable of integer type to a character variable, type-casting rules apply.
   Eg.
     char a = 20;      // byte literal  -> char variable
     char b = 500;     // short literal -> char variable
@@ -45,8 +48,8 @@
     short e = 50; 
     char f = (char)e; // short variable -> char variable
 
-9. To use a unicode for characters:
-   Eg. char ch='\u0040';
+10. To use a unicode for characters:
+    Eg. char ch='\u0040';
 
-10. The range of char is from 0 - 65535. Therefore, it cannot hold any negative values.
+11. The range of char is from 0 - 65535. Therefore, it cannot hold any negative values.
     It underflows if given a negative value.
