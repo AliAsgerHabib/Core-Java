@@ -1,0 +1,52 @@
+1. There are 8 primitive DataTypes:
+************************************
+  DataTypes | Memory Space  | Wrapper Class
+  --------------------------------------------------
+  boolean   | 1 bit         | Boolean
+  byte      | 1 byte        | Byte
+  short     | 2 byte        | Short
+  char      | 2 byte        | Character
+  int       | 4 byte        | Integer
+  long      | 8 byte        | Long
+  float     | 4 byte        | Float
+  double    | 8 byte        | Double
+
+2. Underscores can be used to separate digits.
+   Eg. 214_123_456
+
+3. Default types for whole numbers is int.
+   Default types for floating point numbers is double.
+
+4. An integer literal (ie. a literal of type byte, short, char, int) shows an error if it is outside their range.
+   Interestingly,
+    int a = 2147483647+1;   --> Throws an overflow.
+    int a = 2147483648      --> Gives an error.
+    Reason - This is because the compiler does not attempt to evaluate the expression, and the code will compile. Thus, causing overflow. 
+    But, for '2147483648', compiler throws an error as it is unable to recognize the literal.
+
+5. long literal should always be defined with lower case or upper case 'l' at the end of the literal or else they are treated as int.
+    Eg. 2147483648L
+
+6. float literal should always be defined with lower case or upper case 'f' at the end of the literal or else they are treated as double.
+    Eg. 21.47   --> double
+        21.47f  --> float
+
+7. It is highly recommended that we use 'double' for floating point numbers as it is faster to process and double is the default type for predefined methods and libraries.
+
+8. 'char' is also a subtype of int.
+    >> A literal of type char can be asssigned to a variable of byte, short, int if it is in their range.
+    >> A literal of integer type can be assigned to a variable of char if it is in its range.
+    >> But, to assign a variable of integer type to a character variable, type casting rules apply.
+  Eg.
+    char a = 20;      // byte literal  -> char variable
+    char b = 500;     // short literal -> char variable
+    short c = '@';    // char literal  -> short variable
+    char d = 2400;    // int literal   -> char variable
+    short e = 50; 
+    char f = (char)e; // short variable -> char variable
+
+9. To use a unicode for characters:
+   Eg. char ch='\u0040';
+
+10. The range of char is from 0 - 65535. Therefore, it cannot hold any negative values.
+    It underflows if given a negative value.
