@@ -26,6 +26,9 @@ public class Chapter4 {
 			System.out.println("Equal");
 		else 
 			System.out.println("Not Equal");
+		
+		String wish = "I wish to have \u00241,000,000.";
+		System.out.println(wish);
 	}
 }
 

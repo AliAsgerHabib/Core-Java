@@ -23,3 +23,6 @@
 
 5. contentEquals() can compare a string with CharacterSequence as well as StringBuffer.
 But, equals() can only compare a string with another string object.
+
+6. You can write unicodes within the string.
+    Eg. String wish = "I wish to have \u00241,000,000."
