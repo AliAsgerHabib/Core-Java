@@ -1,0 +1,5 @@
+1. For compound assignment operators: 
+   x -= y; is not the same as x = x - y;
+   It is actually the same as x = (data type of x) x - y;
+   
+2. 
