@@ -38,8 +38,8 @@ Rather, we should use a predefined class called 'BigDecimal'.
  
 9. 'char' is also a subtype of int.
     >> A literal of type char can be asssigned to a variable of byte, short, int if it is in their range.
-    >> A literal of integer type can be assigned to a variable of char if it is in its range.
-    >> But, to assign a variable of integer type to a character variable, type-casting rules apply.
+    >> A literal of byte, short or int can be assigned to a variable of char if it is in its range.
+    >> But, to assign a variable of byte, short or int to a character variable and vice-versa, type-casting rules apply.
   Eg.
     char a = 20;      // byte literal  -> char variable
     char b = 500;     // short literal -> char variable
