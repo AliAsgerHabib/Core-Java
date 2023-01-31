@@ -19,28 +19,35 @@
 
 4. An integer literal (ie. a literal of type byte, short, char, int) shows an error if it is outside their range.
    Interestingly,
-    int a = 2147483647 + 1;   --> Throws an overflow.
-    int a = 2147483648        --> Gives an error.
-    Reason - This is because the compiler does not attempt to evaluate the expression, and the code will compile. Thus, causing overflow. 
-    But, for '2147483648', compiler throws an error as it can evaluate it to be out of range.
+    int a = 2147483647 + 1;   --> Throws an overflow (int + int should be int).
+    int a = 2147483648        --> Gives an error. (Not an int)
+    
+5. When assigning an integer value(literal or constant expression) to a variable of type byte, short or char, a 'narrowing conversion' takes place.
+   Rules for this conversion are:
+   >> 1. Variable should be of type byte, short or char.
+   >> 2. Should be inside the range of the variable type.
+   
+   Eg. byte b = 100; actually works as byte b = (byte)100;
+   >> byte b = 25 + 1; works as it is in the range of byte.
+   >> byte b = 127 + 1; does not work because it is not in the range of byte.
 
-5. long literal should always be defined with lower case or upper case 'l' at the end of the literal or else they are treated as int.
+6. long literal should always be defined with lower case or upper case 'l' at the end of the literal or else they are treated as int.
    Eg. 2147483648L
 
-6. float literal should always be defined with lower case or upper case 'f' at the end of the literal or else they are treated as double.
+7. float literal should always be defined with lower case or upper case 'f' at the end of the literal or else they are treated as double.
    Eg. 21.47   --> double
        21.47f  --> float
 
-7. It is highly recommended that we use 'double' for floating point numbers as it is faster to process and double is the default type for predefined methods and libraries.
+8. It is highly recommended that we use 'double' for floating point numbers as it is faster to process and double is the default type for predefined methods and libraries.
 
-8. In cases where precise calculations is necessary, neither float nor double should be used.
+9. In cases where precise calculations is necessary, neither float nor double should be used.
 Rather, we should use a predefined class called 'BigDecimal'.
  
-9. 'char' is also a subtype of int.
-    >> A literal of type char can be asssigned to a variable of byte, short, int if it is in their range.
-    >> A literal of byte, short or int can be assigned to a variable of char if it is in its range.
-    >> But, to assign a variable of byte, short or int to a character variable and vice-versa, type-casting rules apply.
-  Eg.
+10. 'char' is also a subtype of int.
+     >> A literal of type char can be asssigned to a variable of byte, short, int if it is in their range.
+     >> A literal of byte, short or int can be assigned to a variable of char if it is in its range.
+     >> But, to assign a variable of byte, short or int to a character variable and vice-versa, type-casting rules apply.
+   Eg.
     char a = 20;      // byte literal  -> char variable
     char b = 500;     // short literal -> char variable
     short c = '@';    // char literal  -> short variable
@@ -48,8 +55,8 @@ Rather, we should use a predefined class called 'BigDecimal'.
     short e = 50; 
     char f = (char)e; // short variable -> char variable
 
-10. To use a unicode for characters:
+11. To use a unicode for characters:
     Eg. char ch='\u0040';
 
-11. The range of char is from 0 - 65535. Therefore, it cannot hold any negative values.
+12. The range of char is from 0 - 65535. Therefore, it cannot hold any negative values.
     It underflows if given a negative value.

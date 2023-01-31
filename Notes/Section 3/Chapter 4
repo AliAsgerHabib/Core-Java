@@ -15,14 +15,14 @@
    str.contentEquals(str2) --> true
    str.equals(str3)        --> true
    str.contentEquals(str3) --> true
-   
-4. The '==' operator return true if and only if both the reference variables are pointing to the same memory location.
+
+4. contentEquals() can compare a string with CharacterSequence as well as StringBuffer.
+But, equals() can only compare a string with another string object.  
+
+5.The '==' operator return true if and only if both the reference variables are pointing to the same memory location.
    So,
    str == str2 --> true
    str == str3 --> false
-
-5. contentEquals() can compare a string with CharacterSequence as well as StringBuffer.
-But, equals() can only compare a string with another string object.
 
 6. You can write unicodes within the string.
     Eg. String wish = "I wish to have \u00241,000,000."

@@ -2,10 +2,8 @@ Implicit Type Conversion of byte, char and short to int:
 ============================================================
 1. byte, short and char are automatically converted to int when used in an arithmetic or bitwise expression.
 2. Implicit Conversion does not work for relational expression.
-3. Does not work for increment / decrement operator.
-4. Does not work for compound assignment.
-5. This implicit type conversion only works for variables and not literals.
-Eg. part1()
+3. Does not work for increment / decrement operator and compound assignment operator.
+ Eg. part1()
 
 
 Implicit type conversion happens from:
