@@ -5,7 +5,7 @@ public class Chapter2 {
 	
 	public static void part1()
 	{
-		int a = 2147483647 + 1; // integer + integer gives an integer.
+		int a = Integer.MAX_VALUE + 1; // integer + integer gives an integer.
 //		int b = 2147483648; // Is not an integer
 		
 //	integer + integer gives an integer. But to assign an int to a byte, assignment narrowing takes place.:

@@ -1,5 +1,7 @@
 package com.habib.section3;
 
+import java.awt.Checkbox;
+
 @SuppressWarnings("unused")
 public class Chapter3 {
 	
@@ -11,7 +13,6 @@ public class Chapter3 {
 //		byte c = a & b;	  // Throws an error : Bitwise Operation
 		short f = a++;	  // Works : increment / decrement operations.
 		b += a;			  // Works : compound assignment operation.
-		byte c = 20 + 30; // Works : contains literals
 		short d = 25; 	  // Works :  relational operations 
 		if(d < 100) System.out.println("Hello");
 		short e = d;

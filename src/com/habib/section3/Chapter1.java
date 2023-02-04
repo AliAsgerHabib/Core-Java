@@ -1,9 +1,3 @@
-/*
- * Notes from chapter 1:
- * =====================
- * 
-*/
-
 package com.habib.section3;
 
 public class Chapter1 {
