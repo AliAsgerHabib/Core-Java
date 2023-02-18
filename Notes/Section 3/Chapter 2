@@ -22,9 +22,10 @@
     int a = 2147483647 + 1;   --> Causes an overflow (int + int should be int).
     int a = 2147483648        --> Gives an error. (Not an int)
     
-5. When assigning an integer value (literal or constant expression) to a variable of type byte, short or char, a 'narrowing conversion' takes place.
+5. When assigning a  constant integer value to a variable of type byte, short or char, a 'narrowing conversion' takes place.
    Rules for this conversion are:
-   >> 1. Variable should be of type byte, short or char.
+   >> 1. RHS should be a constant value (literal, constant expression or final variable)
+   >> 2. Variable should be of type byte, short or char.
    >> 2. Value should be inside the range of the variable type.
    
    Eg. byte b = 100; actually works as byte b = (byte)100;
