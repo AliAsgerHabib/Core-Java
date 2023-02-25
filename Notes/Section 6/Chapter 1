@@ -24,6 +24,6 @@ Eg. case "January","February"
 7. If case is only returning a value, it can be used like:
 Eg. case "January","February", March -> "1st"
     case "April" -> "2nd"
-Eg. part2()
 
 8. switch can be used to execute statements as well as to return value. In this case, the 'yield' keyword is used to return the value.
+Eg. part2()

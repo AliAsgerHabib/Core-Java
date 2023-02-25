@@ -15,15 +15,13 @@ Eg. for( ; ; )
 
 Jump statements:
 =================
-1. In while and do-while loops, a continue statement causes control to be transferred directly to the conditional expression.
+1. In while and do-while loops, a continue statement causes control to be transferred directly to the conditional expression. But, in a for loop, control goes first to the iteration statement, then to the conditional expression.
 
-2. In a for loop, control goes first to the iteration statement, then to the conditional expression.
-
-3. Any code after unconditional return, break or continue statement is considered as “unreachable code” and causes a compile time error.
+2. Any code after unconditional return, break or continue statement is considered as “unreachable code” and causes a compile time error.
 
 
 Labeled break and Labeled continue:
-======================================
+====================================
 1. break is traditionally used to break out of a loop or a switch.
   >> By using labeled break, you can break out of one or more blocks of code. These blocks need not be part of a loop or a switch. They can be any block.
   >> The label specifies the block that it can break out of.
@@ -36,5 +34,5 @@ Eg. part1()
   >> If the label is placed after the loop statement, the labeled break works like a simple continue.
 Eg. part2()
 
-3. labeled continue can be used to skip iterations of loops. 
+3. Labeled continue can be used to skip iterations of loops. 
 Eg. part3()

@@ -2,16 +2,15 @@
   >> x -= y; is not the same as x = x - y;
   >> It is actually the same as x = (data type of x) x - y;
 
-2. Logical AND and Logical OR operators are called short circuit operators because:
+2. Logical AND and Logical OR operators (&& and ||) are called short circuit operators because:
   >> AND operator evaulates the first condition and if it is false, it does not evaluate the second condition.
   >> OR operator evaluates the first condition and if it is true, it does not evaluate the second condition.
   >> To evaluate both conditions, use & , | operator.
 
 3. Ternary operator:
   >> Is in the following format: var a = condition1 ? expression1 : expression2
-  >> expression1 and expression2 must have the same return type which is not null.
-  >> The return type should be compatible with the type of variable a.
-  
+  >> Ternary operator always returns something (even null).
+    
 4. Bitwise Operators:
   >> Can only be applied to integer types. ie. byte, short, int, long, char.
   >> The XOR(^) operator returns a 1 when the operands have exactly one 1.

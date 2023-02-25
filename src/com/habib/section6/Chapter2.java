@@ -2,7 +2,7 @@ package com.habib.section6;
 
 @SuppressWarnings("unused")
 public class Chapter2 {
-
+	
 	public static void part1()
 	{
 		int i = 3;
@@ -54,7 +54,7 @@ public class Chapter2 {
 
 	public static void part3()
 	{
-		char check = 'y'; // Set check = x | y
+		char check = 'x'; // Set check = x | y
 		
 		x:
 		for(int i = 0; i < 5 ; i++)
