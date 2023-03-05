@@ -16,8 +16,8 @@
    str.equals(str3)        --> true
    str.contentEquals(str3) --> true
 
-4. contentEquals() can compare a string with CharacterSequence as well as StringBuffer.
-But, equals() can only compare a string with another string object.  
+4. contentEquals() can compare a String with CharacterSequence as well as StringBuffer.
+But, equals() can only compare a String with another String object.
 
 5.The '==' operator return true if and only if both the reference variables are pointing to the same memory location.
    So,

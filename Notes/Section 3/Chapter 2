@@ -26,7 +26,7 @@
    Rules for this conversion are:
    >> 1. RHS should be a constant value (literal, constant expression or final variable)
    >> 2. Variable should be of type byte, short or char.
-   >> 2. Value should be inside the range of the variable type.
+   >> 3. Value should be inside the range of the variable type.
    
    Eg. byte b = 100; actually works as byte b = (byte)100;
    >> byte b = 25 + 1; works as it is in the range of byte.
@@ -49,12 +49,12 @@ Rather, we should use a predefined class called 'BigDecimal'.
      >> A literal of byte, short or int can be assigned to a variable of char if it is in its range.
      >> But, to assign a variable of byte, short or int to a character variable and vice-versa, type-casting rules apply.
    Eg.
-    char a = 20;      // byte literal  -> char variable
-    char b = 500;     // short literal -> char variable
-    short c = '@';    // char literal  -> short variable
+    char a = (byte) 20;      // byte literal  -> char variable
+    char b = (short) 500;     // short literal -> char variable
     char d = 2400;    // int literal   -> char variable
+    short c = '@';    // char literal  -> short variable
     short e = 50; 
-    char f = (char)e; // short variable -> char variable
+    char f = (char) e; // short variable -> char variable
 
 11. To use a unicode for characters:
     Eg. char ch='\u0040';

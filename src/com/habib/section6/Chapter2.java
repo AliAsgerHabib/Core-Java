@@ -5,7 +5,7 @@ public class Chapter2 {
 	
 	public static void part1()
 	{
-		int i = 3;
+		int i = 3;	// Set i = 1 | 2 | 3
 		l1:
 		{
 			System.out.println("Inside 1");
@@ -54,7 +54,7 @@ public class Chapter2 {
 
 	public static void part3()
 	{
-		char check = 'x'; // Set check = x | y
+		char check = 'y'; // Set check = x | y
 		
 		x:
 		for(int i = 0; i < 5 ; i++)
@@ -62,8 +62,8 @@ public class Chapter2 {
 			y:
 			for (int j = 0; j < 5 ; j++)
 			{
-				if(j == 2 && check == 'x') continue x;
-				else if (j == 2 && check == 'y') continue y;
+				if(i == 2 && check == 'x') continue x;
+				else if (i == 2 && check == 'y') continue y;
 				System.out.print(i + ":" + j + " ");
 			}
 			System.out.println("\n end of i loop");

@@ -1,6 +1,8 @@
+Variables : 
+===========
 1. Local variables need to be initialized before they can be used.
 
 2. Variables cannot have the same names in nested scopes.
-  Eg. part1()
+Eg. part1()
     
-3. Local Variables can have the same name as instance variables, but precedence is given to local variables.
+3. Local Variables can have the same name as instance variables, but precedence is given to local variables. To use instance variables, 'this' keyword should be used.
