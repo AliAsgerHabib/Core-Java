@@ -1,0 +1,22 @@
+The 'record' Type :
+===================
+1. Record is Java's implicit Plain Old Java Object(POJO) type.
+
+2. A record is declared as followes : 
+    public record Student(String name, int age, int standard, String dateOfBirth) {}
+  
+3. The part in paranthesis is called the 'record header'. The record header consists of record components separated by comma.
+
+4. Java generates:
+  1. Fields with same name and type as the record components.
+  2. The field is declared as 'private' and 'final'.
+  3. toString() method.
+  4. equals() and hashCode() methods.
+  5. Public Accessor methods (getter Methods) for all the record components. The name of this method is same as the name of the component.
+  Eg. id -> id(), 
+      isPositive -> isPositive()
+  6. It does not generate any setter methods.
+
+5. Objects of record type can be created and used the same way as that of a class.
+
+Eg.(Student.java, StudentMain.java)

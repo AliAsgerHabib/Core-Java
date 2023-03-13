@@ -62,8 +62,8 @@ public class Chapter2 {
 			y:
 			for (int j = 0; j < 5 ; j++)
 			{
-				if(i == 2 && check == 'x') continue x;
-				else if (i == 2 && check == 'y') continue y;
+				if(j == 2 && check == 'x') continue x;
+				else if (j == 2 && check == 'y') continue y;
 				System.out.print(i + ":" + j + " ");
 			}
 			System.out.println("\n end of i loop");

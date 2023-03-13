@@ -1,0 +1,16 @@
+super :
+=========
+1. The 'super' keyword is used to refer to the members and constructors of the immediate superclass.
+
+2. super has two forms:
+  >> Calls the superclass’ constructor.
+  >> Used to access a member of the superclass that has been hidden by a member of a subclass.
+
+3. 
+  >> super() must always be the first statement executed inside a subclass constructor.
+  >> Since this() and super() both need to be the first statement, they cannot be used in the same constructor.
+
+4. 
+  >> By default each constructor of a subclass calls the default or parameterless constructor of the  superclass.
+  >> If no parameter-less constructor is declared, the subclass constructor will show an error.
+  >> To resolve this issue, each constructor of subclass should explicitly call a valid constructor of the superclass using super().

@@ -1,0 +1,11 @@
+Inheritance : 
+==============
+1. A class can inherit from only one class. So, multiple inheritance is not allowed.
+2. A reference variable of superclass can access the object of a subclass.
+3. A reference variable of superclass cannot access members which are unique to the subclass and are not a part of the superclass.
+
+Method Overriding :
+====================
+>> Method overriding occurs only when both the names and the type signatures are identical.
+>> If not, then the two methods are simply overloaded.
+>> There is no concept of method hiding.
