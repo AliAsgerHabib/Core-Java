@@ -1,4 +1,4 @@
-package com.habib.section7;
+package com.habib.section7.chapter4;
 
 public class StudentMain {
 	public static void main(String[] args) {

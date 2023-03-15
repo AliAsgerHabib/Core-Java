@@ -1,0 +1,11 @@
+Object Class : 
+================
+1. The methods getClass( ), notify( ), notifyAll( ), and wait( ) are declared as final. You may override the others.
+
+2. 
+  >> Since arrays are implemented as classes, a variable of type Object can also refer to any array.
+  But, it cannot be used as an array. 
+  Eg.
+    Object ref=new int[10];     // This is completely valid
+    ref[1]=1000;                // This is invalid
+    System.out.println(ref[0]); // This is invalid

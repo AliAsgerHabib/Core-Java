@@ -1,4 +1,4 @@
-package com.habib.section7;
+package com.habib.section7.chapter1;
 
 @SuppressWarnings("unused")
 public class Car 
