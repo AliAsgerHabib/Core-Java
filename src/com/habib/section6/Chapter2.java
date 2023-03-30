@@ -3,9 +3,8 @@ package com.habib.section6;
 @SuppressWarnings("unused")
 public class Chapter2 {
 	
-	public static void part1()
+	public static void part1(int i)	// Set i = 1 | 2 | 3
 	{
-		int i = 3;	// Set i = 1 | 2 | 3
 		l1:
 		{
 			System.out.println("Inside 1");
@@ -26,12 +25,8 @@ public class Chapter2 {
 		System.out.println("Always executes");
 	}
 	
-	public static void part2()
+	public static void part2(int check) // Set check = 1 | 2 | 3 | 4
 	{
-		int check;
-		
-		check = 4; // Set check = 1 | 2 | 3 | 4
-		
 		System.out.println("Before the i loop");
 		ol:
 		for(int i = 0 ; i < 4; i++)ola:
@@ -52,10 +47,8 @@ public class Chapter2 {
 		System.out.println("After the i loop");
 	}
 
-	public static void part3()
+	public static void part3(char check) // Set check = x | y
 	{
-		char check = 'y'; // Set check = x | y
-		
 		x:
 		for(int i = 0; i < 5 ; i++)
 		{
@@ -68,6 +61,6 @@ public class Chapter2 {
 			}
 			System.out.println("\n end of i loop");
 		}
-	}
+	}	
 
 }

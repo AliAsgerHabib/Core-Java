@@ -22,7 +22,7 @@ Jump statements:
 
 Labeled break and Labeled continue:
 ====================================
-1. break is traditionally used to break out of a loop or a switch.
+1. Traditionally, break is used to break out of a loop or a switch.
   >> By using labeled break, you can break out of one or more blocks of code. These blocks need not be part of a loop or a switch. They can be any block.
   >> The label specifies the block that it can break out of.
   >> This label is placed at the beginning of the block.

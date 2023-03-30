@@ -60,4 +60,3 @@ Rather, we should use a predefined class called 'BigDecimal'.
     Eg. char ch='\u0040';
 
 12. The range of char is from 0 - 65535. Therefore, it cannot hold any negative values.
-    It underflows if given a negative value.

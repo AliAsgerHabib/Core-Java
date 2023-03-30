@@ -14,7 +14,8 @@ System.out.printf() System.out.format() :
     1. [argument_index$] : Position of the argument in the argument list. First argument is : 1$
     2. [width] : Minimum number of characters to be written.
     3. [.precision] : Is mostly used for number of values after the decimal.
-    4. conversion: 
+    4. conversion:
+      >> %b -> boolean 
       >> %d -> integers
       >> %f -> floating Pt Numbers
       >> %s -> Strings
@@ -31,4 +32,4 @@ String class also contains 2 formatting methods :
 2. obj.formatted()
   >> Is an instance method.
   >> Introduced in Java 15
-  >> Eg. String str = "Your age is %s".formatted(35);
+  >> Eg. String str = "Your age is %d".formatted(35);

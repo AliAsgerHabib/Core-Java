@@ -1,8 +1,8 @@
 1. String Pool in Java is a special storage space in Java Heap memory where string literals are stored.
     Eg. 
     >> String str = "java"; creates a String in this pool and stores its address in str.
-    >> Now, for String str2 = "java"; , it does not create a new string but copies the address of the already available "java" string to str2.
-    >> But, for String str3 = new String("java"); , a new string object is created with the value "java".
+    >> Now, String str2 = "java"; , does not create a new string but copies the address of the already available "java" string to str2.
+    >> But, for String str3 = new String("java"); , a new String object is created with the value "java".
 
 2. There are 3 methods of comparing strings.
     1. Using the '==' operator.
@@ -16,7 +16,7 @@
    str.equals(str3)        --> true
    str.contentEquals(str3) --> true
 
-4. contentEquals() can compare a String with CharacterSequence as well as StringBuffer.
+4. contentEquals() can compare a String with a CharSequence.
 But, equals() can only compare a String with another String object.
 
 5.The '==' operator return true if and only if both the reference variables are pointing to the same memory location.
