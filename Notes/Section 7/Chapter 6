@@ -11,6 +11,6 @@ super :
   >> Since this() and super() both need to be the first statement, they cannot be used in the same constructor.
 
 4. 
-  >> By default each constructor of a subclass calls the default or parameterless constructor of the  superclass.
+  >> By default each constructor of a subclass calls the default or parameterless constructor of the superclass.
   >> If no parameter-less constructor is declared, the subclass constructor will show an error.
   >> To resolve this issue, each constructor of subclass should explicitly call a valid constructor of the superclass using super().

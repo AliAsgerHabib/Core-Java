@@ -6,8 +6,8 @@ Text block:
 Eg. Main.java
 
 
-System.out.printf() System.out.format() : 
-=========================================
+System.out.printf() and System.out.format() : 
+===============================================
 1. Works like printf() function in C.
 
 2. Syntax is : %[argument_index$][flags][width][.precision]conversion
