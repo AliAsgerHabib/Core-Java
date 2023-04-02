@@ -10,11 +10,11 @@ public class Chapter1 {
 		
 		switch(a)
 		{
-		case 1 : System.out.println("One"); break; // Works for a literal
-		case 1 + 1  : System.out.println("Two"); break; // Works for a constant expression
-		case var : System.out.println("Three"); break; // Works for final variable
-//		case 2 : System.out.println("Pair"); break; // Does not work for duplicate values
-//		case "Sherlock" : System.out.println("Pair"); break; // Type incompatible
+		case 1 : System.out.println("One"); break; 			// Works for a literal
+		case 1 + 1  : System.out.println("Two"); break; 	// Works for a constant expression
+		case var : System.out.println("Three"); break; 		// Works for final variable
+//		case 2 : System.out.println("Pair"); break; 		// Does not work for duplicate values
+//		case "Sherlock" : System.out.println("Pair"); break;// Type incompatible
 		}
 	}
 	

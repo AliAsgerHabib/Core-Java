@@ -2,7 +2,7 @@ Class and Objects :
 =====================
 1. All objects are dynamically allocated (Run time).
 
-2. An object does not go out-of-scope if the method in which it was created terminates. The object will continue to exist as long as there is a reference to it somewhere in your program.
+2. An object does not go out-of-scope if the method in which it was created terminates. The object will remain in memory as long as there is a reference to it somewhere in the program.
 
 3. Box b1 = new Box();
    Box b2 = b1;
@@ -11,7 +11,7 @@ Class and Objects :
 
 4. The implicit return type of a class’ constructor is the class type itself.
 
-5. A class is called a 'top-level' class, if it is not enclosed in the code block of another class, type or method. 
+5. A class is called a 'top-level' class, if it is not enclosed in the code block of another class, type or method.
 
 6. A top-level class can have only 2 access modifiers:
    1. public : Any class in any package can access this.
@@ -30,5 +30,5 @@ Access Modifier for class members :
 
 Garbage Collection : 
 =====================
-1. To deallocate memory, Java uses garabage collection.
+1. To deallocate memory, Java uses garbage collection.
 2. When no references to an object exist, that object is assumed to be no longer needed, and the memory occupied by the object can be reclaimed.

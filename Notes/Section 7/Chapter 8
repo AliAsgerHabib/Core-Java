@@ -1,6 +1,6 @@
 Text block:
 =============
-1. Text block is used to write multiple lines of texts in a edited format.
+1. Text block is used to write multiple lines of texts in an edited format.
 2. It is written within a set of triple-double quote marks (""" """).
 3. A text-block should always begin with a newline.
 Eg. Main.java
@@ -23,13 +23,13 @@ System.out.printf() and System.out.format() :
 
 
 String class also contains 2 formatting methods :
-======================================================
+==================================================
 1. String.format() : 
   >> Is a static method
   >> Works the same as System.out.format() but it returns the value instead of printing.
   >> Eg. String str = String.format("Your age is %d", 35);
 
-2. obj.formatted()
+2. str.formatted()
   >> Is an instance method.
   >> Introduced in Java 15
   >> Eg. String str = "Your age is %d".formatted(35);

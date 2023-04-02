@@ -12,15 +12,15 @@
   double    | 8 byte        | Double
 
 2. Underscores can be used to separate digits.
-   Eg. 214_123_456
+   Eg. 214_456.987_128
 
 3. Default types for whole numbers is int.
    Default types for floating point numbers is double.
 
-4. An integer literal (ie. a literal of type byte, short, char, int) shows an error if it is outside their range.
+4. An integer literal (ie. a literal of type byte, short, char, int, long) shows an error if it is outside their range.
    Interestingly,
     int a = 2147483647 + 1;   --> Causes an overflow (int + int should be int).
-    int a = 2147483648        --> Gives an error. (Not an int)
+    int a = 2147483648;       --> Gives an error. (Not an int)
     
 5. When assigning a  constant integer value to a variable of type byte, short or char, a 'narrowing conversion' takes place.
    Rules for this conversion are:

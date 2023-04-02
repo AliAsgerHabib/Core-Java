@@ -12,7 +12,7 @@ The 'record' Type :
   2. The fields are declared as 'private' and 'final'.
   3. toString() method.
   4. equals() and hashCode() methods.
-  5. Public Accessor methods (getter Methods) for all the record components. The name of this method is same as the name of the component.
+  5. Public Accessor methods (getter Methods) for all the record components. The names of these method are same as the name of the components.
   Eg. id -> id(), 
       isPositive -> isPositive()
   6. It does not generate any setter methods.

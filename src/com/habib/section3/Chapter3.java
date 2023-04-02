@@ -17,18 +17,4 @@ public class Chapter3 {
 		if(d < 100) System.out.println("Hello");
 		short e = d;
 	}
-	
-	public static void main(String[] args) 
-	{
-		byte a = 10;
-		short b = 5000;
-		int c = 50000;
-		long d = 500000;
-		char e = 'A';
-		float f = 12.2f;
-		double g = 20.1;
-		long trial = e;
-		System.out.println(trial);
-	}
-	
 }

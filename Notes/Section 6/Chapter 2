@@ -34,5 +34,5 @@ Eg. part1()
   >> If the label is placed after the loop statement, the labeled break works like a simple continue.
 Eg. part2()
 
-3. Labeled continue can be used to skip iterations of loops. 
+3. Labeled continue can be used to skip iterations of one or more loops. 
 Eg. part3()

@@ -1,6 +1,6 @@
 Inheritance : 
 ==============
-1. A class can inherit from only one class. So, multiple inheritance is not allowed.
+1. A class can inherit from only one class. So, multiple inheritance is not possible.
 2. A reference variable of superclass can access the object of a subclass.
 3. A reference variable of superclass cannot access members which are unique to the subclass and are not a part of the superclass.
 

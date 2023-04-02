@@ -3,7 +3,7 @@ Argument Passing :
 1. If a matching method is not available, implicit type casting can take place b/w passed arguments and specified parameters.
 For eg. fun(10) can invoke fun(double u){}
 
-2. Java will perform automatic type conversions only if no exact match is found.
+2. This automatic type conversions occurs only if no exact match is found.
 
 3. In Java, all arguments are passed using 'call by value'.
 
@@ -14,6 +14,6 @@ For eg. fun(10) can invoke fun(double u){}
 
 Constructors :
 ================
-1. To call one constructor from another, use this() keyword.
-2. A constructor can only be called by another constructor.
-3. Constructor call must be the first statement in a constructor.
+1. A constructor can only be called by another constructor.
+2. To call one constructor from another, use this() keyword.
+3. this() should be the first statement in a constructor definition.
