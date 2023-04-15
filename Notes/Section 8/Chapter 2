@@ -1,0 +1,11 @@
+instanceof : 
+============
+1. instanceof operator is used to check if an object is an instance of the given class.
+Eg. 'obj instanceof Student' returns true if obj is currently refering to an instance of Student.
+
+2. Every instance of the subclass is an instance of the superclass.
+
+Enhanced instanceof : 
+=======================
+1. 'obj instanceof CollegeStudent cs' will create a binding variable 'cs' of type CollegeStudent if the instanceof variable returns true.
+Eg. Main.main()

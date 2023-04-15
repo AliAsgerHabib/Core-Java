@@ -1,0 +1,20 @@
+Packages: 
+==========
+1. If there is no package statement, the classs are put into the default package, which has no name.
+  >> You cannot import classes from the default package.
+
+2. The .class files for any classes that are part of 'mypackage' must be stored in directory called 'mypackage' (Not necessary for the .java files).
+
+3. >> CLASSPATH is the location where java will look for the classes and packages. 
+   >> The JRE considers the current working directory (directory from which the command is executed) as its starting point.
+
+4. You can set the classpath while running the java command.
+  java -cp “/home/habib” com.habib.Main
+
+5. There should be only one public class in a source (.java) file.
+  >> The name of the file should be the same as the name of the public class.
+
+6. >> You can only import a type (ie class or interface, etc).
+   >> A package with only subpackages and no classes cannot be imported.
+
+7. Importing a package does not import its subpackages.

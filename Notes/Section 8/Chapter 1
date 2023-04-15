@@ -1,0 +1,42 @@
+Local Variable Type Inference : 
+================================
+1. Local Variable Type Inference means to infer the type of a local variable based on the type of its initializers.
+
+2. To use local variable type inference, the variable must be declared with 'var' as the type and must include an initializer.
+Eg. Trial.part1
+
+3. 'var' is a context-sensitive identifier so it works as a place-holder for inferred type in a local variable declaration. In other scenarios, it can be used as normal identifier.
+  Eg. int var = 56 ; // This is valid
+      var a = -var;  // Also Valid
+
+4. var myArray = new int[10]; 
+  >> Here, Java infers the type of myArray to be int[].
+  >> There is no need for brackets in LVTI for arrays
+Eg. var[] myArray = new int[10]; // This is invalid
+
+
+Restrictions on LVTI : 
+========================
+1. 'var' cannot be used when declaring:
+  1. instance variables
+  2. parameters
+  3. return types
+  4. exception type caught by a catch statement
+
+2. Only one variable can be declared at a time. 
+Eg. var a = 50 , b = 9000; is invalid.
+
+3. A variable cannot be initialized using : 
+  1. null
+  2. array initializer Eg. var a = {10, 20, 30}; // This is invalid
+  3. Lambda Expression
+  4. Method References
+
+4. var cannot be used as the name of:
+  1. A class
+  2. Other reference types(interface, enumeration, or annotation)
+  3. Generic type parameter
+
+5. Local Variable type inference happens at compile time. So, it does not support polymorphism.
+   The type is infered from the type of the reference variable and not the type of the object.
+Eg. Trial.part4
