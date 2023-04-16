@@ -28,7 +28,7 @@ Access Modifier for class members :
 3. private     : Cannot be accessed outside the class.
 
 
-Garbage Collection : 
+Garbage Collection :
 =====================
 1. To deallocate memory, Java uses garbage collection.
 2. When no references to an object exist, that object is assumed to be no longer needed, and the memory occupied by the object can be reclaimed.

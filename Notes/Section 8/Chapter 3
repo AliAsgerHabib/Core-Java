@@ -1,6 +1,6 @@
 Packages: 
 ==========
-1. If there is no package statement, the classs are put into the default package, which has no name.
+1. If there is no package statement, the classes are put into the default package, which has no name.
   >> You cannot import classes from the default package.
 
 2. The .class files for any classes that are part of 'mypackage' must be stored in directory called 'mypackage' (Not necessary for the .java files).
