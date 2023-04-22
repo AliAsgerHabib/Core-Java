@@ -2,7 +2,7 @@ The 'record' Type :
 ===================
 1. Record is Java's implicit Plain Old Java Object(POJO) type.
 
-2. A record is declared as followes : 
+2. A record is declared as follows : 
     public record Student(String name, int age, int standard, String dateOfBirth) {}
   
 3. The part in paranthesis is called the 'record header'. The record header consists of record components separated by comma.
