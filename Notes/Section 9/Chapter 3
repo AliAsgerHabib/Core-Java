@@ -1,7 +1,7 @@
 Arrays Method : 
 =================
-1. Arrays.toString(arr)      : Returns the elements of the array as Strings.
-2. Arrays.deepToString(arr)  : Returns the elements of the multi- dimensional array as Strings.
+1. Arrays.toString(arr)      : Returns an array as a String.
+2. Arrays.deepToString(arr)  : Returns a multi-dimensional array as a String.
 2. Arrays.sort(arr)          : Sorts the array.
 3. Arrays.fill(arr, value)   : Fills 'value' in all the elements.
 

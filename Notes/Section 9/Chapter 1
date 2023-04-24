@@ -25,4 +25,3 @@ Eg. int[][] arr = new int[4][3];                   // Valid
 Eg. int[][] arr = new int[4][];
     arr[0] = new int[3];
     arr[1] = new int[50];
- 
