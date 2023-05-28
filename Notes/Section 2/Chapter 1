@@ -1,6 +1,0 @@
-JShell:
-========
-1. JShell is a Read-Evaluate-Print-Loop(REPL) tool.
-2. It is a python shell like utility for Java.
-3. To start JShell, type 'jshell' on the terminal.
-4. To write multiple lines of code in JShell, use curly braces '{}'.

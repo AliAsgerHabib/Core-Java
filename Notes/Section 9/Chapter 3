@@ -1,9 +1,0 @@
-Arrays Method : 
-=================
-1. Arrays.toString(arr)      : Returns an array as a String.
-2. Arrays.deepToString(arr)  : Returns a multi-dimensional array as a String.
-2. Arrays.sort(arr)          : Sorts the array.
-3. Arrays.fill(arr, value)   : Fills 'value' in all the elements.
-
-4. Arrays.copyOf(arr,length) : Returns an array of given length which is a copy of the given array.
-  Eg. Chapter3
