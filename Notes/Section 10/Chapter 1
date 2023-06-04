@@ -1,0 +1,19 @@
+ArrayList : 
+=============
+1. Resizeable implementation of an array.
+
+2. To create a new ArrayList:
+    ArrayList<Student> studList = new ArrayList<>();
+
+3. Methods in ArrayList : 
+  1. studList.add(x)    : Adds a value at the end of the list.
+  2. studList.add(i,x)  : Adds a value at the given index.
+  3. studList.set(i,x)  : Sets the value at i to x.
+  4. studList.remove(i) : Removes the value at given index.
+  5. studList.remove(x) : Removes the first instance of x.
+  6. 
+
+6. >> List.of() is a factory method that returns an immutable List.
+   >> It is a varargs method.
+   >> It is mostly used to simplify the task of ArrayList population.
+Eg. part1
