@@ -1,0 +1,24 @@
+static Members:
+=================
+1. A static member can be accessed through a class name as well as a reference variable.
+Eg. obj.start() or Car.start()
+
+2. static members:
+  >> cannot directly call other instance methods of their class.
+  >> cannot directly access instance variables of their class.
+  >> cannot refer to 'this' or 'super' in any way.
+
+3. Instance members can directly use static variables as well as static methods.
+
+
+Can static methods be overriding:
+====================================
+1. Static methods cannot be overriden.
+
+2. Static methods are binded using 'static binding' at compile time.
+
+3. A static method cannot override an instance method and vice versa.
+
+4. If you declare a static method with same method signature in sub class then 'method hiding' takes place (ie. No polymorphism takes place).
+
+Eg. (Worker.java, Employee.java, Main.java)

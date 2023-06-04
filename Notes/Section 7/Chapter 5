@@ -1,0 +1,18 @@
+Inheritance : 
+==============
+1. A class can inherit from only one class. So, multiple inheritance is not possible.
+2. A reference variable of superclass can access the object of a subclass.
+3. A reference variable of superclass cannot access members which are unique to the subclass and are not a part of the superclass.
+
+
+Method Overriding :
+====================
+1. Method overriding occurs only when both the names and the type signatures are identical. If not, then the two methods are simply overloaded.
+
+2. The return type of the overriden method can be same or a covariant of the return type in parent class.
+  Eg. (Parent.java , Child.java, Worker.java)
+
+3. It can't have more restrictive access priviledges.
+  Eg. (Car.java, Mercedes.java)
+
+4. The overriden method should not throw new or broader checked exceptions.

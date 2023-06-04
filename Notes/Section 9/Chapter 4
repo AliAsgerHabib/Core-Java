@@ -1,0 +1,19 @@
+Varargs :
+==========
+1. Varargs methods can take variable number of arguments.
+Eg. void fun(int ... args) {}
+  >> fun() can be called with zero or more arguments.
+  >> args is declared as a int[] type.
+
+2. There can be only 1 varargs parameter.
+3. varargs must be the last parameter.
+4. An array can also be passed in a varargs method.
+Eg. part1 
+
+5. If a method without varargs argument exists, and it matches the method call, then preference is given to this method over varargs methods.
+Eg. part2
+
+Varargs and ambiguity : 
+=========================
+1. Varargs can cause ambiguity as sometimes the compiler is unable to decide which function to call.
+Eg. part2

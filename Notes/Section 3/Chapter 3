@@ -1,0 +1,18 @@
+Implicit Type Conversion of byte, char and short to int:
+============================================================
+1. byte, short and char are automatically converted to int when used in an arithmetic or bitwise expression.
+2. Implicit Conversion does not work for relational expression.
+3. Does not work for increment / decrement operator and compound assignment operator.
+ Eg. part1()
+
+
+Implicit type conversion happens from:
+=======================================
+1. boolean -> Not possible
+2. byte    -> short, int, long, float, double
+3. short   -> int, long, float, double
+4. char    -> int, long, float, double
+5. int     -> long, float, double
+6. long    -> float, double
+7. float   -> double
+8. double  -> Not possible

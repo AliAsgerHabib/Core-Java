@@ -1,0 +1,46 @@
+Record : 
+========
+1. Record is Java's implicit Plain Old Java Object(POJO) type.
+
+2. A record is declared as follows : 
+    public record Student(String name, int age, int standard, String dateOfBirth) {}
+  
+3. The part in paranthesis is called the 'record header'. The record header consists of record components separated by comma.
+
+4. Java generates:
+  1) Fields with same name and type as the record components.
+  2) The fields are declared as 'private' and 'final'.
+  3) toString() , equals() and hashCode() method.
+  4) Public Accessor methods (getter Methods) for all the record components. The names of these method are same as the name of the components.
+  Eg. id -> id(), 
+      isPositive -> isPositive()
+  5) It does not generate any setter methods.
+
+5. You can override the hashCode() , toString() and equals() method.
+
+6. >> Record cannot inherit from any classes.
+   >> It is declared as final, so no subclasses are possible.
+
+7. >> You can create static fields inside a record.
+   >> You can create methods inside a record.
+
+8. Objects of record type can be created and used the same way as that of a class.
+
+
+Constructors for Record : 
+===========================
+1. There are 3 types of constructors:
+  >> Canonical : 
+    1. Auto Generated Constructor
+    2. You can override the canonical constructor, but you need to compulsorily, assign values to the fields.
+
+  >> Compact : 
+    1. This does not create a new constructor. 
+    2. The code in the compact constructor appears as extra code at the start of the canonical constructor. 
+    2. If you have overriden the canonical constructor, then you cannot create a compact constructor.
+
+  >> Custom : 
+    1. New Constructor with custom number of arguments. 
+    2. The first statement inside a custom constructor should be a call to the canonical constructor.
+
+Eg. (Student.java, StudentMain.java)

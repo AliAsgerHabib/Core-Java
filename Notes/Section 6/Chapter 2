@@ -1,0 +1,38 @@
+'for' loop:
+============
+1. You can use multiple statements in intialization and iteration separated by commas.
+Eg. for(a=1, b=2 ; a<b ; a++, b--)
+
+2. for( int i=0, b=1; i<10; i++, b++) <-- This is valid
+   for( int i=0; int b=1; i<10; i++, b++) <-- This is invalid
+
+3. Either the initialization or the iteration expression or both may be absent.
+Eg. for( ; i<10 ; )
+
+4. You can create an infinite loop by leaving all the parts empty.
+Eg. for( ; ; )
+
+
+Jump statements:
+=================
+1. In while and do-while loops, a continue statement causes control to be transferred directly to the conditional expression. But, in a for loop, control goes first to the iteration statement, then to the conditional expression.
+
+2. Any code after unconditional return, break or continue statement is considered as “unreachable code” and causes a compile time error.
+
+
+Labeled break and Labeled continue:
+====================================
+1. Traditionally, break is used to break out of a loop or a switch.
+  >> By using labeled break, you can break out of one or more blocks of code. These blocks need not be part of a loop or a switch. They can be any block.
+  >> The label specifies the block that it can break out of.
+  >> This label is placed at the beginning of the block.
+  >> You cannot use break to transfer control out of a block that does not enclose the break statement.
+Eg. part1()
+
+2. Labelled break can be used on loops as follows:
+   outer: for(int i = 0 ; i < 10 ; i++)
+  >> If the label is placed after the loop statement, the labeled break works like a simple continue.
+Eg. part2()
+
+3. Labeled continue can be used to skip iterations of one or more loops. 
+Eg. part3()

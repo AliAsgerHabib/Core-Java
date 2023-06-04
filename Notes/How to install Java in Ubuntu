@@ -1,0 +1,18 @@
+First download the file from the official website.
+
+Then extract the downloaded file:
+  $ cd Downloads
+  $ tar -zxvf jdk-13.0.2_linux-x64_bin.tar.gz
+
+Go to /usr/lib. Make a folder named "java".
+  $ mkdir /usr/lib/Java
+
+Now move the extracted folder from Downloads to /usr/lib/java
+  $ sudo mv jdk-13.0.2 /usr/lib/java
+  
+Now execute the following commands:
+  $ sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk-13.0.2/bin/java 1
+  $ sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk-13.0.2/bin/javac 1
+
+To check executer the following commands:
+  $ java --version
