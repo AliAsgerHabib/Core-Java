@@ -1,4 +1,4 @@
-package com.habib.section3;
+package com.habib;
 
 import java.awt.Checkbox;
 

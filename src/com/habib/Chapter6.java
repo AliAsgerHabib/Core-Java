@@ -1,7 +1,7 @@
-package com.habib.section5;
+package com.habib;
 
 @SuppressWarnings("unused")
-public class Chapter1 {
+public class Chapter6 {
 	 
 	void part1()
 	{
